@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class buton : MonoBehaviour
+public class buton2 : MonoBehaviour
 {
    
     void Start()
@@ -17,7 +17,7 @@ public class buton : MonoBehaviour
     }
     public void yenidenbasla()
     {
-        SceneManager.LoadScene("mainscene");
+        SceneManager.LoadScene("yiid");
     }
 
 

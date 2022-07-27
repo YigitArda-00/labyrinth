@@ -26,7 +26,7 @@ public class tophareket : MonoBehaviour
             zaman.text = (int)zamansayaci + "";
         }else if (!oyuntamam)
         {
-            durum.text = "Oyun Tamamlanamadı.";
+            
             btn.gameObject.SetActive(true);
         }
         if (zamansayaci < 0)
@@ -54,7 +54,7 @@ public class tophareket : MonoBehaviour
         {
             //print("Oyun Tamamland�");
             oyuntamam = true;
-            durum.text = "Oyun Tamamlandı.Tebrikler.";
+            
             btn.gameObject.SetActive(true);
         } else if (!objIsmi.Equals("labirentzemini") && !objIsmi.Equals("zemin"))
         {
