@@ -1,0 +1,24 @@
+# This is an Asset Catalog Definition file for Blender.
+#
+# Empty lines and lines starting with `#` will be ignored.
+# The first non-ignored line should be the version indicator.
+# Other lines are of the format "UUID:catalog/path/for/assets:simple catalog name"
+
+VERSION 1
+
+17c92e66-6910-4b41-a6cb-b196194bd5c8:Cartoon:Cartoon
+fbf692c3-3427-42d2-a282-4056f41ac1db:Ceramic:Ceramic
+1b689286-3ff5-4433-9785-536547470b29:Emission:Emission
+a15f7c43-4eef-4d79-927c-a64bb38936a7:Extra:Extra
+41629d31-6643-4439-95a2-11dddd29da71:Fabric:Fabric
+c5da736b-06d5-4080-ae6b-a0434df71ea8:Glas&Liquid:Glas&Liquid
+52316c63-ec9b-41af-9ed9-9015c7ad2660:Ground:Ground
+be77d38e-a991-4f55-90ee-f14876176570:Metall:Metall
+47626f24-6db1-417a-9f57-a54946c14392:Plastic:Plastic
+69398ab0-ea31-4b11-bde7-56f01a057d64:SciFi:SciFi
+351cba86-709d-4d79-b023-b21f9577f669:Stone:Stone
+f5e7bc73-2151-4950-a961-b7e567c54b5a:Stylized:Stylized
+21b0687c-909f-4d08-b223-764e138e1645:Volumetric:Volumetric
+76daa35b-04a4-4324-ac60-2d0e5f4a00b4:Wall:Wall
+98fadb04-3f93-4aed-8da2-3560d0c90fea:Wood:Wood
+c67a4d9a-934d-48b1-8e02-61eb13c0da9b:World Backround:World Backround
