@@ -58,8 +58,10 @@ public class tophareket : MonoBehaviour
             //print("Oyun Tamamland�");
             //oyuntamam = true;
             
-            btn.gameObject.SetActive(true);
-        } else if (!objIsmi.Equals("labirentzemini") && !objIsmi.Equals("zemin"))
+            //btn.gameObject.SetActive(true);
+        }
+
+        if (!objIsmi.Equals("labirentzemini") && !objIsmi.Equals("zemin"))
         {
             cansayaci -= 1;
             can.text = cansayaci + "";
