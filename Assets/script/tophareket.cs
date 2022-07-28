@@ -6,6 +6,7 @@ public class tophareket : MonoBehaviour
 {
     public UnityEngine.UI.Button btn;
     public UnityEngine.UI.Text zaman,durum,can;
+    public UnityEngine.UI.Image died;
    private Rigidbody rg;
    public float Hiz = 1.5f;
     float zamansayaci = 30;
