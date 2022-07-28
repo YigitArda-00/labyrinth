@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class tophareket : MonoBehaviour
 {
@@ -53,8 +54,9 @@ public class tophareket : MonoBehaviour
         string objIsmi = cls.gameObject.name;
         if (objIsmi.Equals("bitis"))
         {
+            SceneManager.LoadScene("yiid");
             //print("Oyun Tamamland�");
-            oyuntamam = true;
+            //oyuntamam = true;
             
             btn.gameObject.SetActive(true);
         } else if (!objIsmi.Equals("labirentzemini") && !objIsmi.Equals("zemin"))
