@@ -8,9 +8,9 @@ public class tophareket : MonoBehaviour
     public UnityEngine.UI.Button btn;
     public UnityEngine.UI.Text zaman,durum,can;
     public UnityEngine.UI.Image died;
-   private Rigidbody rg;
-   public float Hiz = 1.5f;
-    float zamansayaci = 30;
+    private Rigidbody rg;
+    public float Hiz = 1.5f;
+    public float zamansayaci = 30;
     int cansayaci = 5;
     bool oyundevam = true;
     bool oyuntamam = false;

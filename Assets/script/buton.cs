@@ -4,20 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class buton : MonoBehaviour
 {
+    public int currentSceneIndex;
    
-    void Start()
-    {
-        
-    }
-
-
-    void Update()
-    {
-        
-    }
     public void yenidenbasla()
     {
-        SceneManager.LoadScene("mainscene");
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
 
