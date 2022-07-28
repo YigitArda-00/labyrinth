@@ -54,7 +54,7 @@ public class tophareket : MonoBehaviour
         string objIsmi = cls.gameObject.name;
         if (objIsmi.Equals("bitis"))
         {
-            SceneManager.LoadScene("yiid");
+            SceneManager.LoadScene("level1");
             //print("Oyun Tamamland�");
             //oyuntamam = true;
             
