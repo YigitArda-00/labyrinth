@@ -20,11 +20,9 @@ public class tophareket : MonoBehaviour
     bool oyuntamam = false;
 
     void Start()
-    {
-       
+    {  
         can.text = cansayaci + "";
         rg = GetComponent<Rigidbody>();
-
     }
     void Update()
     {
@@ -66,7 +64,7 @@ public class tophareket : MonoBehaviour
             //print("Oyun Tamamland�");
             //oyuntamam = true;
 
-            btn.gameObject.SetActive(true);
+           // btn.gameObject.SetActive(true);
         }
 
         if (!objIsmi.Equals("labirentzemini") && !objIsmi.Equals("zemin"))
