@@ -8,14 +8,20 @@ public class tophareket : MonoBehaviour
     public UnityEngine.UI.Button btn;
     public UnityEngine.UI.Text zaman,durum,can;
     public UnityEngine.UI.Image died;
+
     private Rigidbody rg;
+
     public float Hiz = 1.5f;
     public float zamansayaci = 30;
-    int cansayaci = 5;
+    public int cansayaci = 5;
+    public float heal = 1f;
+
     bool oyundevam = true;
     bool oyuntamam = false;
+
     void Start()
     {
+       
         can.text = cansayaci + "";
         rg = GetComponent<Rigidbody>();
 
@@ -36,6 +42,7 @@ public class tophareket : MonoBehaviour
             oyundevam = false;
         }
     }
+    
     void FixedUpdate()
     {
         if (oyundevam && !oyuntamam){
@@ -49,20 +56,22 @@ public class tophareket : MonoBehaviour
             rg.angularVelocity = Vector3.zero;
         }
     }
+
     void OnCollisionEnter(Collision cls)
     {
         string objIsmi = cls.gameObject.name;
         if (objIsmi.Equals("bitis"))
         {
-            SceneManager.LoadScene("level1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //print("Oyun Tamamland�");
             //oyuntamam = true;
-            
-            //btn.gameObject.SetActive(true);
+
+            btn.gameObject.SetActive(true);
         }
 
         if (!objIsmi.Equals("labirentzemini") && !objIsmi.Equals("zemin"))
         {
+            
             cansayaci -= 1;
             can.text = cansayaci + "";
             if (cansayaci == 0)
@@ -70,7 +79,6 @@ public class tophareket : MonoBehaviour
                 oyundevam = false;
             }
         }
-              
     }
     
 }
